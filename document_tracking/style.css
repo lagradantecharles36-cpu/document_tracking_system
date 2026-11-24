@@ -1,0 +1,138 @@
+/* ============================================================
+   Document Tracking System - Custom Stylesheet (Bootstrap 5)
+   ============================================================ */
+
+:root {
+    --brand-primary: #1e3a8a;
+    --brand-secondary: #2563eb;
+    --brand-accent: #0ea5e9;
+    --surface-bg: #f8fafc;
+}
+
+body {
+    background-color: var(--surface-bg);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar-brand-custom {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.12);
+}
+
+.brand-icon-box {
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+}
+
+/* KPI Stat Cards */
+.stat-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+}
+
+/* Main Content Card */
+.content-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+/* Tracking Code Pill */
+.tracking-code {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+    font-size: 0.82rem;
+    font-weight: 600;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+/* Status Badges */
+.badge-status {
+    font-weight: 600;
+    padding: 0.4em 0.75em;
+    border-radius: 50rem;
+    font-size: 0.76rem;
+    letter-spacing: 0.01em;
+}
+
+.status-pending { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.status-transit { background-color: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
+.status-review  { background-color: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; }
+.status-approved { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.status-completed { background-color: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+.status-returned { background-color: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+/* Priority Indicators */
+.priority-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.priority-low    { background-color: #64748b; }
+.priority-normal { background-color: #2563eb; }
+.priority-high   { background-color: #f59e0b; }
+.priority-urgent { background-color: #dc2626; box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2); }
+
+/* Table Styling */
+.table-custom thead th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e2e8f0;
+    padding: 0.9rem 1rem;
+}
+
+.table-custom tbody td {
+    padding: 0.95rem 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
